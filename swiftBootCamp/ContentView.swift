@@ -11,12 +11,12 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "hand.palm.facing.fill")
-                .imageScale(.large)
-                .font(.title)
-                .foregroundStyle(.tint)
-            Spacer().frame(height: 16)
-            Text("Hello world!").bold()
+          
+            Text("Hello world! my name is mahmoud what about your name".capitalized)
+                .font(.callout)
+                .multilineTextAlignment(.leading)
+                .frame(width: 94,height: 130,alignment: .center)
+
             
         }
         .padding()
