@@ -22,7 +22,7 @@ struct navigationViewCamp: View {
             
             .navigationBarTitleDisplayMode(.automatic)
             .navigationBarItems(leading: Text("Leading"),
-                                railing: Image(systemName: "gear"))
+                                trailing: Image(systemName: "gear"))
             
         }
      
