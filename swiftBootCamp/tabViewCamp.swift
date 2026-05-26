@@ -20,6 +20,7 @@ struct tabViewCamp: View {
                 Image(systemName: "person.fill")
             }
             .tag(0)
+            .badge(2)
             ZStack{
                 Color.green.ignoresSafeArea()
                 Text("page 1")
@@ -29,6 +30,7 @@ struct tabViewCamp: View {
                 Image(systemName: "globe.fill")
             }
             .tag(1)
+            .badge(0)
             ZStack{
                 Color.yellow.ignoresSafeArea()
                 Text("page 2")

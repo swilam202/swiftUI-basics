@@ -21,7 +21,7 @@ class FruitViewModel : ObservableObject{
     
     init(){
         self.isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.fruits.append(FruitModel(count: 5, name: "Banana"))
             self.fruits.append(FruitModel(count: 2, name: "Watermelon"))
             self.fruits.append(FruitModel(count: 3, name: "Apple"))
@@ -50,8 +50,10 @@ struct ViewModelCamp: View {
                             
                             Text(fruit.name)
                                 .font(.headline)
+                                
                             
                         }
+                        .badge("Available")
                     }
                 }
                 .navigationTitle(Text("Fruits"))

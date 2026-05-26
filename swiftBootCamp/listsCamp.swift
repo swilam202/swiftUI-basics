@@ -21,8 +21,23 @@ struct listsCamp: View {
                         fruit in
                         Text(fruit)
                     }
+                   
                     .onDelete(perform: delete)
                     .onMove(perform: move)
+                    .swipeActions(edge: .leading, content: {
+                        Button("Clear"){
+                            add()
+                        }
+                        .tint(.red)
+                        Button("move"){
+                            add()
+                        }
+                        .tint(.blue)
+                        Button("add"){
+                            add()
+                        }
+                        .tint(.green)
+                    })
                 }
             }
             .listStyle(DefaultListStyle())

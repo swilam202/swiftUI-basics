@@ -16,6 +16,7 @@ struct buttonCamp: View {
             Button(title){
                 count+=1
             }
+            .buttonStyle(.glass)
 
             Button(action: {
                 count+=1
